@@ -53,10 +53,10 @@ namespace TDD3.Tests
         public void CountVowelsAndConsonantsTest3()
         {
             var methods = new TDD3_Methods();
-            var sentence = "A1B2c3d4e 5f6g7å8ä9ö";
+            var sentence = "Hej på dig";
 
 
-            var expectedVowelsCount = 5;
+            var expectedVowelsCount = 3;
             var expectedConsonantsCount = 5;
 
             int actualVowelsCount;

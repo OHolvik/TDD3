@@ -20,7 +20,7 @@ namespace TDD3
 
             methods.CountVowelsAndConsonants(sentence, out numberOfVowels, out numberOfConsonants);
 
-            Console.WriteLine($"vowels: {numberOfVowels} & consonants: {numberOfVowels}");
+            Console.WriteLine($"vowels: {numberOfVowels} & consonants: {numberOfConsonants}");
 
             Console.WriteLine("Skriv en meing: ");
             sentence = Console.ReadLine();
