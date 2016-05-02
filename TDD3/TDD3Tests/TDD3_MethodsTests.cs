@@ -15,7 +15,7 @@ namespace TDD3.Tests
         public void CountVowelsAndConsonantsTest1()
         {
             var methods = new TDD3_Methods();
-            var sentence = "abcdefghij";
+            var sentence = "a1b2c3d4e 5f6g7h8i9j";
 
 
             var expectedVowelsCount = 3;
@@ -33,13 +33,39 @@ namespace TDD3.Tests
         [TestMethod()]
         public void CountVowelsAndConsonantsTest2()
         {
+            var methods = new TDD3_Methods();
+            var sentence = "a1b2c3d4e 5f6g7å8ä9ö";
 
+
+            var expectedVowelsCount = 5;
+            var expectedConsonantsCount = 5;
+
+            int actualVowelsCount;
+            int actualConsonantsCount;
+
+            methods.CountVowelsAndConsonants(sentence, out actualVowelsCount, out actualConsonantsCount);
+
+            Assert.AreEqual(expectedVowelsCount, actualVowelsCount);
+            Assert.AreEqual(expectedConsonantsCount, actualConsonantsCount);
         }
 
         [TestMethod()]
         public void CountVowelsAndConsonantsTest3()
         {
+            var methods = new TDD3_Methods();
+            var sentence = "A1B2c3d4e 5f6g7å8ä9ö";
 
+
+            var expectedVowelsCount = 5;
+            var expectedConsonantsCount = 5;
+
+            int actualVowelsCount;
+            int actualConsonantsCount;
+
+            methods.CountVowelsAndConsonants(sentence, out actualVowelsCount, out actualConsonantsCount);
+
+            Assert.AreEqual(expectedVowelsCount, actualVowelsCount);
+            Assert.AreEqual(expectedConsonantsCount, actualConsonantsCount);
         }
 
         [TestMethod()]
