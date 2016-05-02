@@ -12,6 +12,7 @@ namespace TDD3
         {
             numberOfVowels = 0;
             numberOfConsonants = 0;
+
         }
 
 
