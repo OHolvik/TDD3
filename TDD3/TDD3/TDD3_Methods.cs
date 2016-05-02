@@ -10,9 +10,9 @@ namespace TDD3
     {
         public void CountVowelsAndConsonants(string sentence, out int numberOfVowels, out int numberOfConsonants)
         {
-            numberOfVowels = 0;
-            numberOfConsonants = 0;
-
+            var candidates = sentence.ToLower();
+            numberOfVowels = candidates.Count(c => c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'å' || c == 'ä' || c == 'ö');
+            numberOfConsonants = candidates.Count(c => c >= 'a' && c <= 'z' || c == 'å' || c == 'ä' || c == 'ö') - numberOfVowels;
         }
 
 
