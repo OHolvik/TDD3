@@ -90,6 +90,16 @@ namespace TDD3.Tests
         [TestMethod()]
         public void StringReplacementTest2()
         {
+            var methods = new TDD3_Methods();
+            var sentence = "Hey how are you?";
+
+            var expectedReplacement = "you";
+
+            string actualReplacement = "Hey how are we";
+
+            Assert.AreNotEqual(expectedReplacement, actualReplacement);
+
+
 
         }
 
