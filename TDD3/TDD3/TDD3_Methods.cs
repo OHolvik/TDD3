@@ -31,8 +31,14 @@ namespace TDD3
 
         public string StringReplacement(string sentence, string stringToReplace, string replacementString)
         {
-
-            return sentence.Replace(stringToReplace, replacementString);
+            
+            var words = sentence.Split();
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Equals(stringToReplace))
+                    words[i] = replacementString;
+            }
+            return string.Join(" ", words);
         }
     }
 }

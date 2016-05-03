@@ -72,12 +72,12 @@ namespace TDD3.Tests
         public void StringReplacementTest1()
         {
             var metodhs = new TDD3_Methods();
-            var sentence = "Hello hell boy";
+            var sentence = "hello hell boy";
 
             var stringToReplace = "hell";
             var replacementString = "heaven";
 
-            var notExpectedSentence = "Heaveno heaven boy";
+            var notExpectedSentence = "heaveno heaven boy";
             var actualSetence = metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
             metodhs.StringReplacement(sentence, stringToReplace, replacementString);
