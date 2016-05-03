@@ -71,19 +71,15 @@ namespace TDD3.Tests
         [TestMethod()]
         public void StringReplacementTest1()
         {
-            //Arrenge
+            
             var methods = new TDD3_Methods();
             var sentence = "Hej jag är en åsna";
 
-            var replace = "åsna";
-            var replacement = "Jackass";
+            var expectedreplace = "åsna";
 
-            //Act
-            methods.StringReplacement(sentence,replace, replacement );
+            string actualReplacment = "Hej jag är en åsna";
 
-            //Assert
-            string actual
-            Assert.AreNotEqual();
+            Assert.AreEqual(expectedreplace, actualReplacment);
 
         }
 
@@ -98,8 +94,6 @@ namespace TDD3.Tests
             string actualReplacement = "Hey how are we";
 
             Assert.AreNotEqual(expectedReplacement, actualReplacement);
-
-
 
         }
 
