@@ -72,17 +72,17 @@ namespace TDD3.Tests
         public void StringReplacementTest1()
         {
             var metodhs = new TDD3_Methods();
-            var sentence = "Hello my name is Nirre";
+            var sentence = "Hello hell boy";
 
-            var stringToReplace = "name";
-            var replacementString = "cat";
+            var stringToReplace = "hell";
+            var replacementString = "heaven";
 
-            var expectedSentence = "Hello my cat is Nirre";
-            var actualSetence = "Hello my cat is Nirre";
+            var notExpectedSentence = "Heaveno heaven boy";
+            var actualSetence = metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
             metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
-            Assert.AreEqual(expectedSentence, actualSetence);
+            Assert.AreNotEqual(notExpectedSentence, actualSetence);
         }
 
         [TestMethod()]
@@ -95,7 +95,7 @@ namespace TDD3.Tests
             var replacementString = "Hello";
 
             var expectedSentence = "Hello how are you?";
-            var actualSetence = "Hello how are you?";
+            var actualSetence = metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
             metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
@@ -106,13 +106,13 @@ namespace TDD3.Tests
         public void StringReplacementTest3()
         {
             var metodhs = new TDD3_Methods();
-            var sentence = "Hello hey hey";
+            var sentence = "Hello hey hey ";
 
             var stringToReplace = "hey";
             var replacementString = "bom";
 
             var expectedSentence = "Hello bom bom";
-            var actualSetence = "Hello bom bom";
+            var actualSetence = metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
             metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
