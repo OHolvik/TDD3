@@ -84,7 +84,7 @@ namespace TDD3.Tests
 
             string actualReplacement = "Hey how are we";
 
-            Assert.AreEqual(expectedReplacement, actualReplacement);
+            Assert.AreNotEqual(expectedReplacement, actualReplacement);
 
 
 
