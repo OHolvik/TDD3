@@ -71,6 +71,19 @@ namespace TDD3.Tests
         [TestMethod()]
         public void StringReplacementTest1()
         {
+            //Arrenge
+            var methods = new TDD3_Methods();
+            var sentence = "Hej jag är en åsna";
+
+            var replace = "åsna";
+            var replacement = "Jackass";
+
+            //Act
+            methods.StringReplacement(sentence,replace, replacement );
+
+            //Assert
+            string actual
+            Assert.AreNotEqual();
 
         }
 
