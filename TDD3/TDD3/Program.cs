@@ -12,7 +12,7 @@ namespace TDD3
         {
             var methods = new TDD3_Methods();
 
-            Console.WriteLine("Skriv en meing: ");
+            Console.WriteLine("Skriv en mening: ");
             var sentence = Console.ReadLine();
 
             int numberOfVowels;
@@ -22,7 +22,7 @@ namespace TDD3
 
             Console.WriteLine($"vowels: {numberOfVowels} & consonants: {numberOfConsonants}");
 
-            Console.WriteLine("Skriv en meing: ");
+            Console.WriteLine("Skriv en mening: ");
             sentence = Console.ReadLine();
 
             Console.WriteLine("ord som ska ersätta: ");
