@@ -100,8 +100,6 @@ namespace TDD3.Tests
             metodhs.StringReplacement(sentence, stringToReplace, replacementString);
 
             Assert.AreEqual(expectedSentence, actualSetence);
-
-
         }
 
         [TestMethod()]
