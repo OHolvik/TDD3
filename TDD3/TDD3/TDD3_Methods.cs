@@ -29,12 +29,10 @@ namespace TDD3
             }
         }
 
-
         public string StringReplacement(string sentence, string stringToReplace, string replacementString)
         {
-            string result = "";
 
-            return result;
+            return sentence.Replace(stringToReplace, replacementString);
         }
     }
 }

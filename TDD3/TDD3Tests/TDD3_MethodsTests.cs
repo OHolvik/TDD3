@@ -106,7 +106,7 @@ namespace TDD3.Tests
         public void StringReplacementTest3()
         {
             var metodhs = new TDD3_Methods();
-            var sentence = "Hello hey hey ";
+            var sentence = "Hello hey hey";
 
             var stringToReplace = "hey";
             var replacementString = "bom";

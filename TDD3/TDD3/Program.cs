@@ -26,14 +26,15 @@ namespace TDD3
             sentence = Console.ReadLine();
 
             Console.WriteLine("ord som ska ersätta: ");
-            var replace = Console.ReadLine();
+            var stringToReplace = Console.ReadLine();
 
             Console.WriteLine("ord som ersätts med: ");
-            var replacement = Console.ReadLine();
+            var replacementString = Console.ReadLine();
 
-            var result = methods.StringReplacement(sentence, replace, replacement);
+            var result = methods.StringReplacement(sentence, stringToReplace, replacementString);
 
             Console.WriteLine($"Resultat: {result}");
+            Console.ReadLine();
         }
     }
 }
